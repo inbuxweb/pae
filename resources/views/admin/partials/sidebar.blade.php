@@ -2,7 +2,7 @@
 
   <!-- Brand Logo Light -->
   <h3 class="logo logo-light">
-      PAE
+    <img src="{{asset('assets/images/logo-pae.png')}}" style="max-width: 100%;" alt="logo">
   </h3>
 
   <!-- Sidebar Hover Menu Toggle Button -->
@@ -36,7 +36,7 @@
               </a>
           </li>
           <li class="side-nav-item">
-              <a href="" class="side-nav-link">
+              <a href="{{route('planning')}}" class="side-nav-link">
                   <i class="uil-calender"></i>
                   <span> Planificación </span>
               </a>
@@ -44,16 +44,16 @@
           <li class="side-nav-item">
               <a data-bs-toggle="collapse" href="#sidebarProjects" aria-expanded="false" aria-controls="sidebarProjects" class="side-nav-link">
                   <i class="uil-bus-school"></i>
-                  <span> Escuelas </span>
+                  <span> Colegios </span>
                   <span class="menu-arrow"></span>
               </a>
               <div class="collapse" id="sidebarProjects">
                   <ul class="side-nav-second-level">
                       <li>
-                          <a href="">Todo</a>
+                          <a href="{{route('schools')}}">Todos los colegios</a>
                       </li>
                       <li>
-                          <a href="">Crear</a>
+                          <a href="{{route('school.create')}}">Crear colegio</a>
                       </li>
                   </ul>
               </div>
@@ -66,35 +66,42 @@
               </a>
               <div class="collapse" id="platos">
                   <ul class="side-nav-second-level">
-                      <li>
-                          <a href="">Todos</a>
-                      </li>
-                      <li>
-                          <a href="">Crear</a>
-                      </li>
-                  </ul>
-              </div>
-          </li>
-          <li class="side-nav-item">
-              <a data-bs-toggle="collapse" href="#sidebarTasks" aria-expanded="false" aria-controls="sidebarTasks" class="side-nav-link">
-                  <i class="uil-clipboard-alt"></i>
-                  <span> Ingredientes </span>
-                  <span class="menu-arrow"></span>
-              </a>
-              <div class="collapse" id="sidebarTasks">
-                  <ul class="side-nav-second-level">
-                      <li>
-                          <a href="">Todos</a>
-                      </li>
-                      <li>
-                          <a href="">Crear</a>
-                      </li>
-                      <li>
-                        <a href="">Proveedores</a>
+                        <li>
+                            <a href="{{route('plates')}}">Todos los platos</a>
+                        </li>
+                        <li>
+                            <a href="{{route('plates.create')}}">Crear plato</a>
+                        </li>
+                        <li>
+                            <a href="{{route('ingredients')}}">Ingredientes</a>
+                        </li>
+                        <li>
+                            <a href="{{route('ingredient.create')}}">Agregar Ingrediente</a>
+                        </li>
                     </li>
                   </ul>
               </div>
           </li>
+          <li class="side-nav-item">
+            <a data-bs-toggle="collapse" href="#sidebarTasks" aria-expanded="false" aria-controls="sidebarTasks" class="side-nav-link">
+                <i class="uil-clipboard-alt"></i>
+                <span> Inventario </span>
+                <span class="menu-arrow"></span>
+            </a>
+            <div class="collapse" id="sidebarTasks">
+                <ul class="side-nav-second-level">
+                    <li>
+                        <a href="{{route('inventory')}}">Inventario actual</a>
+                    </li>
+                    <li>
+                        <a href="{{route('purchases.create')}}">Suministrar</a>
+                    </li>
+                    <li>
+                      <a href="{{route('providers')}}">Proveedores</a>
+                  </li>
+                </ul>
+            </div>
+        </li>
           <li class="side-nav-item">
               <a data-bs-toggle="collapse" href="#sidebarCharts" aria-expanded="false" aria-controls="sidebarCharts" class="side-nav-link">
                   <i class="uil-chart"></i>
@@ -113,21 +120,10 @@
               </div>
           </li>
           <li class="side-nav-item">
-            <a data-bs-toggle="collapse" href="#users" aria-expanded="false" aria-controls="sidebarCharts" class="side-nav-link">
+            <a href="{{route('users')}}" class="side-nav-link">
                 <i class="uil-users-alt"></i>
                 <span> Usuarios </span>
-                <span class="menu-arrow"></span>
             </a>
-            <div class="collapse" id="users">
-                <ul class="side-nav-second-level">
-                    <li>
-                        <a href="">Todos</a>
-                    </li>
-                    <li>
-                        <a href="">Crear</a>
-                    </li>
-                </ul>
-            </div>
         </li>
       </ul>
       <!--- End Sidemenu -->

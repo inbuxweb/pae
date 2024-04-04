@@ -19,3 +19,6 @@
 
   <!-- App js -->
   <script src="{{ asset('assets/js/app.min.js') }}"></script>
+  <script src="{{ asset('assets/vendor/fullcalendar/main.min.js') }}"></script>
+  <script src="{{ asset('assets/js/pages/demo.calendar.js') }}"></script>
+  @livewireScripts

@@ -6,7 +6,7 @@
 
                     <!-- Logo -->
                     <div class="card-header py-4 text-center bg-primary">
-                        <h2 style="color: #fff">PAE</h2>
+                        <img src="{{asset('assets/images/logo-pae.png')}}" style="max-width: 100%;" alt="logo">
                         {{-- <a href="index.html">
                             <span><img src="assets/images/logo.png" alt="logo" height="22"></span>
                         </a> --}}
