@@ -36,6 +36,12 @@
               </a>
           </li>
           <li class="side-nav-item">
+            <a href="{{route('inspeccion')}}" class="side-nav-link">
+                <i class="uil-calender"></i>
+                <span> Inspección </span>
+            </a>
+        </li>
+          <li class="side-nav-item">
               <a href="{{route('planning')}}" class="side-nav-link">
                   <i class="uil-calender"></i>
                   <span> Planificación </span>
