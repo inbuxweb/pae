@@ -29,7 +29,7 @@
       <ul class="side-nav">
 
           <li class="side-nav-item">
-              <a data-bs-toggle="collapse" href="{{route('home')}}" aria-expanded="false" aria-controls="sidebarDashboards" class="side-nav-link">
+              <a href="{{route('home')}}" aria-expanded="false" aria-controls="sidebarDashboards" class="side-nav-link">
                   <i class="uil-home-alt"></i>
                   <span class="badge bg-success float-end">5</span>
                   <span> Resumen </span>
@@ -108,7 +108,7 @@
                 </ul>
             </div>
         </li>
-          <li class="side-nav-item">
+        {{-- <li class="side-nav-item">
               <a data-bs-toggle="collapse" href="#sidebarCharts" aria-expanded="false" aria-controls="sidebarCharts" class="side-nav-link">
                   <i class="uil-chart"></i>
                   <span> Reportes </span>
@@ -124,7 +124,7 @@
                       </li>
                   </ul>
               </div>
-          </li>
+          </li> --}}
           <li class="side-nav-item">
             <a href="{{route('users')}}" class="side-nav-link">
                 <i class="uil-users-alt"></i>

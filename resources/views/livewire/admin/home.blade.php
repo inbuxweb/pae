@@ -16,7 +16,7 @@
                         </a>
                     </form>
                 </div>
-                <h4 class="page-title">Resumen</h4>
+                <h4 class="page-title">Monitoreo en Tiempo Real</h4>
             </div>
         </div>
     </div>
@@ -26,11 +26,11 @@
             <div class="card tilebox-one">
                 <div class="card-body">
                     <i class='uil uil-users-alt float-end'></i>
-                    <h6 class="text-uppercase mt-0">Active Users</h6>
+                    <h6 class="text-uppercase mt-0">Platos Servidos</h6>
                     <h2 class="my-2" id="active-users-count">121</h2>
                     <p class="mb-0 text-muted">
                         <span class="text-success me-2"><span class="mdi mdi-arrow-up-bold"></span> 5.27%</span>
-                        <span class="text-nowrap">Since last month</span>  
+                        <span class="text-nowrap">Desde el mes pasado</span>  
                     </p>
                 </div> <!-- end card-body-->
             </div>
@@ -39,100 +39,131 @@
             <div class="card tilebox-one">
                 <div class="card-body">
                     <i class='uil uil-window-restore float-end'></i>
-                    <h6 class="text-uppercase mt-0">Views per minute</h6>
-                    <h2 class="my-2" id="active-views-count">560</h2>
+                    <h6 class="text-uppercase mt-0">Análisis por Minuto</h6>
+                    <h2 class="my-2" id="active-views-count">3</h2>
                     <p class="mb-0 text-muted">
                         <span class="text-danger me-2"><span class="mdi mdi-arrow-down-bold"></span> 1.08%</span>
-                        <span class="text-nowrap">Since previous week</span>
+                        <span class="text-nowrap">Desde el mes pasado</span>
                     </p>
                 </div> <!-- end card-body-->
             </div>
-            <!--end card-->
-
-            <div class="card cta-box overflow-hidden">
-                <div class="card-body">
-                    <div class="d-flex align-items-center">
-                        <div>
-                            <h3 class="m-0 fw-normal cta-box-title">Enhance your <b>Campaign</b> for better outreach <i class="mdi mdi-arrow-right"></i></h3>
-                        </div>
-                        <img class="ms-3" src="assets/images/svg/email-campaign.svg" width="92" alt="Generic placeholder image">
-                    </div>
+            <div class="card">
+                <div class="d-flex card-header justify-content-between align-items-center">
+                    <h4 class="">Municipios con PDA</h4>
                 </div>
-                <!-- end card-body -->
-            </div>
+                <div class="card-body pt-0">
+                    <div id="average-sales" class="apex-charts mb-4 mt-2"
+                        data-colors="#727cf5,#0acf97,#fa5c7c,#ffbc00"></div>
+                    <div class="chart-widget-list">
+                        <p>
+                            <i class="mdi mdi-square text-primary"></i> SÍ
+                            <span class="float-end">45</span>
+                        </p>
+                        <p>
+                            <i class="mdi mdi-square text-success"></i> NO
+                            <span class="float-end">55</span>
+                        </p>
+                    </div>
+                </div> <!-- end card-body-->
+            </div> <!-- end card-->
+            <!--end card-->
         </div> <!-- end col -->
 
         <div class="col-xl-9 col-lg-8">
             <div class="card card-h-100">
                 <div class="card-body">
-                    <div class="alert alert-warning alert-dismissible fade show mb-3" role="alert">
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                        Property HY1xx is not receiving hits. Either your site is not receiving any sessions or it is not tagged correctly.
-                    </div>
-                    <ul class="nav float-end d-none d-lg-flex">
-                        <li class="nav-item">
-                            <a class="nav-link text-muted" href="#">Today</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-muted" href="#">7d</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">15d</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-muted" href="#">1m</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-muted" href="#">1y</a>
-                        </li>
-                    </ul>
-                    <h4 class="header-title mb-3">Sessions Overview</h4>
-
-                    <div dir="ltr">
-                        <div id="sessions-overview" class="apex-charts mt-3" data-colors="#0acf97"></div>
-                    </div>
+                    <div class="d-flex card-header justify-content-between align-items-center">
+                            <h4 class="header-title">Vista Departamental</h4>
+                            <div class="dropdown">
+                                <a href="#" class="dropdown-toggle arrow-none card-drop"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="mdi mdi-dots-vertical"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item">Refresh Report</a>
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item">Export Report</a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="card-body pt-0">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <div id="world-map-markers" class="mt-3 mb-3" style="height: 300px">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4" dir="ltr">
+                                    <div id="country-chart" class="apex-charts" data-colors="#727cf5"></div>
+                                </div>
+                            </div>
+                        </div> <!-- end card-body-->
+                        <div class="row">
+                            <div class="col-6">
+                                <h4>Caracterización por Edad</h4>
+                                <div id="edad"></div>
+                            </div>
+                            <div class="col-6">
+                                    <div class="d-flex card-header justify-content-between align-items-center">
+                                        <h4 class="header-title">Meta Departamental</h4>
+                                    </div>
+                    
+                                        <div id="views-min" class="apex-charts" data-colors="#0acf97"></div>
+                    
+                                        <div class="table-responsive mt-3">
+                                            <table class="table table-sm mb-0 font-13">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Municipio</th>
+                                                        <th>Puntaje</th>
+                                                        <th>Eficiencia</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <a href="javascript:void(0);" class="text-muted">Medellín</a>
+                                                        </td>
+                                                        <td>25</td>
+                                                        <td>87.5%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <a href="javascript:void(0);" class="text-muted">Bello</a>
+                                                        </td>
+                                                        <td>15</td>
+                                                        <td>21.48%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <a href="javascript:void(0);" class="text-muted">Río Negro</a>
+                                                        </td>
+                                                        <td>10</td>
+                                                        <td>63.59%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <a href="javascript:void(0);" class="text-muted">Envigado</a>
+                                                        </td>
+                                                        <td>7</td>
+                                                        <td>56.12%</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                            </div>
+                        </div>
                 </div> <!-- end card-body-->
             </div> <!-- end card-->
+            
         </div>
     </div>
 
-    
-    <div class="row">
-        <div class="col-12">
-            <div class="card">
-                <div class="d-flex card-header justify-content-between align-items-center">
-                    <h4 class="header-title">Sessions by country</h4>
-                    <div class="dropdown">
-                        <a href="#" class="dropdown-toggle arrow-none card-drop"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="mdi mdi-dots-vertical"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end">
-                            <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item">Refresh Report</a>
-                            <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item">Export Report</a>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="card-body pt-0">
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <div id="world-map-markers" class="mt-3 mb-3" style="height: 300px">
-                            </div>
-                        </div>
-                        <div class="col-lg-4" dir="ltr">
-                            <div id="country-chart" class="apex-charts" data-colors="#727cf5"></div>
-                        </div>
-                    </div>
-                </div> <!-- end card-body-->
-            </div> <!-- end card-->
-        </div> <!-- end col-->
-    </div>
     <!-- end row -->
 
-    <div class="row">
+    {{-- <div class="row">
         <div class="col-xl-4 col-lg-12">
             <div class="card">
                 <div class="d-flex card-header justify-content-between align-items-center">
@@ -256,10 +287,10 @@
                 </div> <!-- end card-body-->
             </div> <!-- end card-->
         </div> <!-- end col-->
-    </div>
+    </div> --}}
     <!-- end row -->
 
-    <div class="row">
+    {{-- <div class="row">
         <div class="col-xl-4 col-lg-6">
             <div class="card">
                 <div class="d-flex card-header justify-content-between align-items-center">
@@ -446,7 +477,87 @@
             </div> <!-- end card-->
         </div> <!-- end col-->
 
-    </div>
+    </div> --}}
     <!-- end row -->
+   
+    <script src="{{ asset('assets/vendor/apexcharts/apexcharts.min.js') }}"></script>
+  <!-- Analytics Dashboard App js -->
+  <script>
+    
+    var options = {
+          series: [{
+          name: 'Edades',
+          data: [10, 9, 12, 8, 5, 14]
+        }],
+          annotations: {
+          points: [{
+            x: 'Bananas',
+            seriesIndex: 0,
+            label: {
+              borderColor: '#775DD0',
+              offsetY: 0,
+              style: {
+                color: '#fff',
+                background: '#775DD0',
+              },
+              text: 'Bananas are good',
+            }
+          }]
+        },
+        chart: {
+          height: 350,
+          type: 'bar',
+          toolbar: {
+            show: false
+            }
+        },
+        plotOptions: {
+          bar: {
+            borderRadius: 10,
+            columnWidth: '50%',
+          }
+        },
+        dataLabels: {
+          enabled: false
+        },
+        stroke: {
+          width: 2
+        },
+        
+        grid: {
+          row: {
+            colors: ['#fff', '#f2f2f2']
+          }
+        },
+        xaxis: {
+          labels: {
+            rotate: -45
+          },
+          categories: ['15', '14', '13', '12', '9', '10'
+          ],
+          tickPlacement: 'on'
+        },
+        yaxis: {
+          title: {
+            text: '',
+          },
+        },
+        fill: {
+          type: 'gradient',
+          gradient: {
+            shade: 'light',
+            type: "horizontal",
+            shadeIntensity: 0.25,
+            gradientToColors: undefined,
+            inverseColors: true,
+            opacityFrom: 0.85,
+            opacityTo: 0.85,
+            stops: [50, 0, 100]
+          },
+        }
+        };
 
+        var chart = new ApexCharts(document.querySelector("#edad"), options);
+        chart.render();
+  </script>
 </div>
