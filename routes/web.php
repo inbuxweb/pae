@@ -18,6 +18,7 @@ use App\Livewire\Admin\School\CreateSchool;
 use App\Livewire\Admin\Planning\ListPlanning;
 use App\Livewire\Admin\Users\ListUsers;
 use App\Livewire\Admin\Analytics\Inspeccion;
+use App\Livewire\Admin\Report\Delivery;
 
 /*
 |--------------------------------------------------------------------------
@@ -63,4 +64,5 @@ Route::prefix('admin')->middleware('auth')->group(function() {
 
     //Analytics
     Route::get('inspeccion', Inspeccion::class)->name('inspeccion');
+    Route::get('report', Delivery::class)->name('report');
 });

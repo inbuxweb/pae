@@ -108,7 +108,7 @@
                 </ul>
             </div>
         </li>
-        {{-- <li class="side-nav-item">
+        <li class="side-nav-item">
               <a data-bs-toggle="collapse" href="#sidebarCharts" aria-expanded="false" aria-controls="sidebarCharts" class="side-nav-link">
                   <i class="uil-chart"></i>
                   <span> Reportes </span>
@@ -117,14 +117,14 @@
               <div class="collapse" id="sidebarCharts">
                   <ul class="side-nav-second-level">
                       <li>
-                          <a href="">Reporte 1</a>
+                          <a href="{{route('report')}}">Medición Temperatura Alimentos</a>
                       </li>
-                      <li>
+                      {{-- <li>
                           <a href="">Reporte 2</a>
-                      </li>
+                      </li> --}}
                   </ul>
               </div>
-          </li> --}}
+          </li>
           <li class="side-nav-item">
             <a href="{{route('users')}}" class="side-nav-link">
                 <i class="uil-users-alt"></i>
