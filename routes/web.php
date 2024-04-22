@@ -19,6 +19,8 @@ use App\Livewire\Admin\Planning\ListPlanning;
 use App\Livewire\Admin\Users\ListUsers;
 use App\Livewire\Admin\Analytics\Inspeccion;
 use App\Livewire\Admin\Report\Delivery;
+use App\Livewire\Admin\Report\Cumplimiento;
+use App\Livewire\Admin\Report\Monitoreo;
 
 /*
 |--------------------------------------------------------------------------
@@ -65,4 +67,6 @@ Route::prefix('admin')->middleware('auth')->group(function() {
     //Analytics
     Route::get('inspeccion', Inspeccion::class)->name('inspeccion');
     Route::get('report', Delivery::class)->name('report');
+    Route::get('cumplimiento', Cumplimiento::class)->name('cumplimiento');
+    Route::get('monitoreo', Monitoreo::class)->name('monitoreo');
 });

@@ -1,4 +1,4 @@
-<div>
+<div class="container-fluid">
     <style>
         #map {
             height: 100%;
@@ -11,10 +11,10 @@
             <ol class="breadcrumb m-0">
                 <li class="breadcrumb-item"><a href="javascript: void(0);">Inicio</a></li>
                 <li class="breadcrumb-item"><a href="javascript: void(0);">Reporte</a></li>
-                <li class="breadcrumb-item active">Medición Temperatura Alimentos</li>
+                <li class="breadcrumb-item active">Monitoreo Programación de Menús</li>
             </ol>
         </div>
-        <h4 class="text-start page-title">Medición Temperatura Alimentos</h4>
+        <h4 class="text-start page-title">Monitoreo Programación de Menús</h4>
     </div>
     
     <div class="row">
@@ -23,8 +23,13 @@
                 <div class="card-body">
                     <div class="row align-items-center">
                         <div class="col-6">
-                            {{-- <h5 class="text-muted fw-normal mt-0 text-truncate" title="Campaign Sent">Meta Departamental</h5> --}}
-                            <h3 class="my-2 py-1">2,239</h3>
+                            <h5 class="text-muted fw-normal mt-0 text-truncate" title="Campaign Sent">
+                                <svg height="64px" width="64px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#000000;} </style> <g> <path class="st0" d="M223.092,102.384c36.408,0,43.7-28.298,43.7-43.732V43.724c0-15.434-7.292-43.724-43.7-43.724 c-36.408,0-43.699,28.29-43.699,43.724v14.928C179.393,74.086,186.684,102.384,223.092,102.384z"></path> <path class="st0" d="M332.816,204.792l-33.502-54.597c-9.812-16.012-22.516-28.507-40.535-28.507h-27.463h-39.106 c-29.406,0-53.24,25.255-53.24,56.404v162.192h35.992V512h34.834l21.521-156.443L252.836,512h34.834V263.901v-40.857l29.47,34.048 l55.89-38.978v-32.932L332.816,204.792z"></path> </g> </g></svg>
+                            </h5>
+                            <h3 class="my-2 py-1">
+                                <strong>Total</strong> 
+                                82.468
+                            </h3>
                         </div>
                         <div class="col-6">
                             <div class="text-end">
@@ -41,8 +46,13 @@
                 <div class="card-body">
                     <div class="row align-items-center">
                         <div class="col-6">
-                            {{-- <h5 class="text-muted fw-normal mt-0 text-truncate" title="New Leads">Cumplimiento</h5> --}}
-                            <h3 class="my-2 py-1">3,339</h3>
+                            <h5 class="text-muted fw-normal mt-0 text-truncate" title="New Leads">
+                                <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 98.666 98.666" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <circle cx="49.332" cy="53.557" r="10.297"></circle> <path d="M53.7,64.556h-8.737c-7.269,0-13.183,5.916-13.183,13.184v10.688l0.027,0.166l0.735,0.229 c6.937,2.168,12.965,2.892,17.927,2.892c9.688,0,15.303-2.764,15.65-2.938l0.688-0.351l0.071,0.002V77.739 C66.883,70.472,60.971,64.556,53.7,64.556z"></path> <circle cx="28.312" cy="23.563" r="16.611"></circle> <path d="M70.35,40.174c9.174,0,16.609-7.44,16.609-16.613c0-9.17-7.438-16.609-16.609-16.609c-9.176,0-16.61,7.437-16.61,16.609 S61.174,40.174,70.35,40.174z"></path> <path d="M41.258,62.936c-2.637-2.274-4.314-5.632-4.314-9.378c0-4.594,2.519-8.604,6.243-10.743 c-2.425-0.965-5.061-1.511-7.826-1.511H21.266C9.54,41.303,0,50.847,0,62.571v17.241l0.043,0.269L1.23,80.45 c10.982,3.432,20.542,4.613,28.458,4.656v-7.367C29.688,70.595,34.623,64.599,41.258,62.936z"></path> <path d="M77.398,41.303H63.305c-2.765,0-5.398,0.546-7.824,1.511c3.727,2.139,6.246,6.147,6.246,10.743 c0,3.744-1.678,7.102-4.313,9.376c2.656,0.661,5.101,2.02,7.088,4.008c2.888,2.89,4.479,6.726,4.478,10.8v7.365 c7.916-0.043,17.477-1.225,28.457-4.656l1.187-0.369l0.044-0.269V62.571C98.664,50.847,89.124,41.303,77.398,41.303z"></path> </g> </g> </g></svg>
+                            </h5>
+                            <h3 class="my-2 py-1">
+                                <strong>Total</strong> 
+                                77.957
+                            </h3>
                         </div>
                         <div class="col-6">
                             <div class="text-end">
@@ -53,199 +63,259 @@
                 </div> <!-- end card-body -->
             </div> <!-- end card -->
         </div> <!-- end col -->
-    </div>
 
-    <div class="row">
-        <div class="col-6">
-            <div class="card">
-                <div id="chart1"></div>
-            </div>
-        </div>
-        <div class="col-6">
-            <div class="card">
-                <div id="chart2"></div>
-            </div>
-        </div>
+        
     </div>
     <div class="row">
         <div class="col-6">
-            <div class="p-2 card">
-                <h4>Transportes</h4>
+            <div class="card">
+                <h6 class="p-2">Años</h6>
                 <div id="chart3"></div>
             </div>
         </div>
         <div class="col-6">
             <div class="card">
-                <div class="row">
-                    <div class="col-6">
-                        <img style="max-width: 100%" src="{{asset('assets/images/medicion.png')}}" alt="">
-                    </div>
-                    <div class="col-6">
-                        <div id="map"></div>
-                    </div>
-                </div>
+                <h6 class="p-2">Caracterización por Edad</h6>
+                <div id="chart4"></div>
             </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <div class="card">
+                <h6 class="p-2">Municipios</h6>
+                <div id="chart2"></div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div id="map"></div>
         </div>
     </div>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBX-mluPrkpnJXG5D9lex2tk92SAOujhes&libraries=visualization&callback=initMap" async="false" type="text/javascript"></script>
     <script src="{{ asset('assets/vendor/apexcharts/apexcharts.min.js') }}"></script>
+
     <script>
-
-        var options3 = {
-          series: [44, 55, 13, 43, 22],
-          chart: {
-          width: 380,
-          type: 'pie',
-        },
-        labels: ['Transporte 1', 'Transporte 2', 'Transporte 3', 'Transporte 4', 'Transporte 5'],
-        responsive: [{
-          breakpoint: 480,
-          options: {
-            chart: {
-              width: 200
-            },
-            legend: {
-              position: 'bottom'
-            }
-          }
-        }]
-        };
-
-        var chart3 = new ApexCharts(document.querySelector("#chart3"), options3);
-        chart3.render();
-      
-          var options = {
+         var options = {
           series: [{
-          name: 'Sales',
-          data: [4, 3, 10, 9, 29, 19, 22, 9, 12, 7, 19, 5, 13, 9, 17, 2, 7, 5]
+          data: [400, 430, 448]
         }],
           chart: {
-            toolbar: {
-              show: false
-            },
-          height: 350,
-          type: 'line',
+          type: 'bar',
+          height: 350
         },
-        forecastDataPoints: {
-          count: 7
-        },
-        stroke: {
-          width: 5,
-          curve: 'smooth'
-        },
-        title: {
-          text: 'Temperatura de Lacteos',
-          align: 'left',
-          style: {
-            fontSize: "16px",
-            color: '#666'
+        plotOptions: {
+          bar: {
+            borderRadius: 4,
+            horizontal: true,
           }
         },
-        fill: {
-          type: 'gradient',
-          gradient: {
-            shade: 'dark',
-            gradientToColors: [ '#FDD835'],
-            shadeIntensity: 1,
-            type: 'horizontal',
-            opacityFrom: 1,
-            opacityTo: 1,
-            stops: [0, 100, 100, 100]
-          },
+        dataLabels: {
+          enabled: false
+        },
+        xaxis: {
+          categories: ['Bajo Cauca', 'Norte', 'Suroeste'],
         }
         };
 
         var chart = new ApexCharts(document.querySelector("#chart1"), options);
         chart.render();
-        
+      
+
+
 
         var options2 = {
           series: [{
-            name: "Carne 1",
-            data: [45, 52, 38, 24, 33, 26, 21, 20, 6, 8, 15, 10]
-          },
-          {
-            name: "Carne 2",
-            data: [35, 41, 62, 42, 13, 18, 29, 37, 36, 51, 32, 35]
-          },
-          {
-            name: 'Carne 3',
-            data: [87, 57, 74, 99, 75, 38, 62, 47, 82, 56, 45, 47]
-          }
-        ],
+          data: [400, 430, 448, 470]
+        }],
           chart: {
-            toolbar: {
-              show: false
-            },
-          height: 350,
-          type: 'line',
-          zoom: {
-            enabled: false
-          },
+          type: 'bar',
+          height: 380
         },
+        plotOptions: {
+          bar: {
+            barHeight: '100%',
+            distributed: true,
+            horizontal: true,
+            dataLabels: {
+              position: 'bottom'
+            },
+          }
+        },
+        colors: ['#33b2df', '#546E7A', '#d4526e', '#13d8aa'
+        ],
         dataLabels: {
-          enabled: false
+          enabled: true,
+          textAnchor: 'start',
+          style: {
+            colors: ['#fff']
+          },
+          formatter: function (val, opt) {
+            return opt.w.globals.labels[opt.dataPointIndex] + ":  " + val
+          },
+          offsetX: 0,
+          dropShadow: {
+            enabled: true
+          }
         },
         stroke: {
-          width: [5, 7, 5],
-          curve: 'straight',
-          dashArray: [0, 8, 5]
-        },
-        title: {
-          text: 'Temperatura de Carnes',
-          align: 'left'
-        },
-        legend: {
-          tooltipHoverFormatter: function(val, opts) {
-            return val + ' - <strong>' + opts.w.globals.series[opts.seriesIndex][opts.dataPointIndex] + '</strong>'
-          }
-        },
-        markers: {
-          size: 0,
-          hover: {
-            sizeOffset: 6
-          }
+          width: 1,
+          colors: ['#fff']
         },
         xaxis: {
-          categories: ['01 Jan', '02 Jan', '03 Jan', '04 Jan', '05 Jan', '06 Jan', '07 Jan', '08 Jan', '09 Jan',
-            '10 Jan', '11 Jan', '12 Jan'
+          categories: ['Medellín', 'Bello', 'Ríonegro', 'Envigado',
           ],
         },
+        yaxis: {
+          labels: {
+            show: false
+          }
+        },
+        title: {
+            text: '',
+            align: 'center',
+            floating: true
+        },
         tooltip: {
-          y: [
-            {
-              title: {
-                formatter: function (val) {
-                  return val + " (mins)"
-                }
-              }
-            },
-            {
-              title: {
-                formatter: function (val) {
-                  return val + " per session"
-                }
-              }
-            },
-            {
-              title: {
-                formatter: function (val) {
-                  return val;
-                }
+          theme: 'dark',
+          x: {
+            show: false
+          },
+          y: {
+            title: {
+              formatter: function () {
+                return ''
               }
             }
-          ]
-        },
-        grid: {
-          borderColor: '#f1f1f1',
+          }
         }
         };
 
         var chart2 = new ApexCharts(document.querySelector("#chart2"), options2);
         chart2.render();
 
-         // Coordenadas aproximadas de Medellín
-         var medellinCoords = { latMin: 6.1651, latMax: 6.3553, lngMin: -75.6673, lngMax: -75.4795 };
+
+        var options3 = {
+          series: [{
+            name: "Desktops",
+            data: [10, 41, 35, 51, 49, 62, 69, 91, 148, 200]
+        }],
+          chart: {
+          height: 350,
+          type: 'line',
+          zoom: {
+            enabled: false
+          }
+        },
+        dataLabels: {
+          enabled: false
+        },
+        stroke: {
+          curve: 'straight'
+        },
+        title: {
+          text: 'Última actualización: hace 5 segundos',
+          align: 'left'
+        },
+        grid: {
+          row: {
+            colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
+            opacity: 0.5
+          },
+        },
+        xaxis: {
+          categories: ['2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019'],
+        }
+        };
+
+        var chart3 = new ApexCharts(document.querySelector("#chart3"), options3);
+        chart3.render();
+
+
+        var options4 = {
+          series: [{
+          name: 'Inflation',
+          data: [200, 155, 300, 500, 567, 800]
+        }],
+          chart: {
+          height: 350,
+          type: 'bar',
+        },
+        plotOptions: {
+          bar: {
+            borderRadius: 10,
+            dataLabels: {
+              position: 'top', // top, center, bottom
+            },
+          }
+        },
+        dataLabels: {
+          enabled: true,
+          formatter: function (val) {
+            return val + "%";
+          },
+          offsetY: -20,
+          style: {
+            fontSize: '12px',
+            colors: ["#304758"]
+          }
+        },
+        
+        xaxis: {
+          categories: ["5 a 6", "7 a 8", "9 a 10", "11 a 12", "13 a 15", "16 a 17"],
+          position: 'top',
+          axisBorder: {
+            show: false
+          },
+          axisTicks: {
+            show: false
+          },
+          crosshairs: {
+            fill: {
+              type: 'gradient',
+              gradient: {
+                colorFrom: '#8c1212',
+                colorTo: '#ae5858',
+                stops: [0, 100],
+                opacityFrom: 0.4,
+                opacityTo: 0.5,
+              }
+            }
+          },
+          tooltip: {
+            enabled: true,
+          }
+        },
+        yaxis: {
+          axisBorder: {
+            show: false
+          },
+          axisTicks: {
+            show: false,
+          },
+          labels: {
+            show: false,
+            formatter: function (val) {
+              return val + "%";
+            }
+          }
+        
+        },
+        title: {
+          text: 'Última actualización: hace 15 segundos',
+          floating: true,
+          offsetY: 330,
+          align: 'center',
+          style: {
+            color: '#444'
+          }
+        }
+        };
+
+        var chart4 = new ApexCharts(document.querySelector("#chart4"), options4);
+        chart4.render();
+
+        // Coordenadas aproximadas de Medellín
+        var medellinCoords = { latMin: 6.1651, latMax: 6.3553, lngMin: -75.6673, lngMax: -75.4795 };
 
         // Función para generar coordenadas aleatorias dentro de un rango específico
         function getRandomCoords(latMin, latMax, lngMin, lngMax) {
@@ -275,5 +345,6 @@
             });
         }
     </script>
-    
+     
+
 </div>

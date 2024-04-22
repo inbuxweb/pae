@@ -119,6 +119,12 @@
                       <li>
                           <a href="{{route('report')}}">Medición Temperatura Alimentos</a>
                       </li>
+                      <li>
+                          <a href="{{route('cumplimiento')}}">Cumplimiento Programación de Menús</a>
+                      </li>
+                      <li>
+                          <a href="{{route('monitoreo')}}">Monitoreo Programación de Menús</a>
+                      </li>
                       {{-- <li>
                           <a href="">Reporte 2</a>
                       </li> --}}
